@@ -5,6 +5,7 @@
         <h1>{{ i.title }}</h1>
         <text class="text-2xl">{{ i.pre }}</text>
         <text class="text-xl">{{ i.pre }}</text>
+        <text class="text-xl">{{ i.pre }}</text>
         <button>控制</button>
     </li>
   </ul>
@@ -20,7 +21,6 @@ import { PropType } from 'vue';
   description: string;
   pre: string;
 }
-
 // 直接返回组件选项对象
 const props = defineProps<{
   list: CloumListProp[];
